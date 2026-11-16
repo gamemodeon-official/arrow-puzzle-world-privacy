@@ -1,253 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Privacy Policy | Arrow Puzzle World</title>
-
-  <meta name="description" content="Read the Privacy Policy for Arrow Puzzle World. Learn how we handle information, advertising, Firebase services, security and user privacy.">
-
+  <meta name="description" content="Privacy Policy for Arrow Puzzle World. Learn how gameplay data, analytics, advertising, Firebase services and notifications are handled.">
   <meta name="robots" content="index, follow">
-
   <meta name="theme-color" content="#FFF9F1">
-
   <style>
     :root {
-      --orange: #FF7518;
-      --orange-dark: #E9630B;
-      --cream: #FFF9F1;
-      --surface: #FFFFFF;
-      --text: #29251F;
-      --muted: #77716A;
+      --orange: #FF7518; --orange-dark: #E9630B; --cream: #FFF9F1;
+      --surface: #FFFFFF; --text: #29251F; --muted: #77716A;
       --border: #EFE6DA;
     }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Inter, Arial, sans-serif;
-      background: var(--cream);
-      color: var(--text);
-      line-height: 1.75;
-    }
-
-    a {
-      color: var(--orange-dark);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .topbar {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    .brand {
-      font-size: 21px;
-      font-weight: 800;
-      color: var(--text);
-    }
-
-    .brand span {
-      color: var(--orange);
-    }
-
-    .topbar a {
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-    .hero {
-      padding: 75px 20px 65px;
-      text-align: center;
-      background: linear-gradient(135deg, #FFF1DE, #FFF9F1);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .hero-label {
-      display: inline-block;
-      background: #FFE5CB;
-      color: #B84D08;
-      padding: 6px 16px;
-      border-radius: 30px;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-
-    .hero h1 {
-      font-size: clamp(34px, 5vw, 50px);
-      line-height: 1.2;
-      margin-bottom: 15px;
-    }
-
-    .hero h1 span {
-      color: var(--orange);
-    }
-
-    .hero p {
-      color: var(--muted);
-      max-width: 650px;
-      margin: auto;
-    }
-
-    .updated {
-      margin-top: 20px;
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    .container {
-      max-width: 1050px;
-      margin: 45px auto;
-      padding: 0 22px;
-      display: grid;
-      grid-template-columns: 245px 1fr;
-      gap: 28px;
-      align-items: start;
-    }
-
-    .sidebar {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 22px;
-      position: sticky;
-      top: 90px;
-    }
-
-    .sidebar h3 {
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
-
-    .sidebar a {
-      display: block;
-      font-size: 13px;
-      color: var(--muted);
-      padding: 7px 0;
-    }
-
-    .content {
-      min-width: 0;
-    }
-
-    .notice {
-      background: #FFF0DE;
-      border-left: 4px solid var(--orange);
-      padding: 18px 20px;
-      border-radius: 8px;
-      margin-bottom: 25px;
-      font-size: 14px;
-    }
-
-    .policy-section {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 27px;
-      margin-bottom: 18px;
-      scroll-margin-top: 95px;
-    }
-
-    .policy-section h2 {
-      font-size: 20px;
-      margin-bottom: 14px;
-    }
-
-    .policy-section h3 {
-      font-size: 16px;
-      margin: 20px 0 8px;
-    }
-
-    .policy-section p {
-      color: #5D574F;
-      font-size: 14px;
-      margin-bottom: 12px;
-    }
-
-    .policy-section ul {
-      padding-left: 22px;
-      color: #5D574F;
-      font-size: 14px;
-      margin: 10px 0 15px;
-    }
-
-    .policy-section li {
-      margin-bottom: 8px;
-    }
-
-    .contact-card {
-      background: #FFF0DE;
-      border: 1px solid #FFDFC0;
-      border-radius: 14px;
-      padding: 25px;
-    }
-
-    .contact-card h2 {
-      margin-bottom: 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 13px;
-      background: white;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, Arial, sans-serif; background: var(--cream); color: var(--text); line-height: 1.75; }
+    a { color: var(--orange-dark); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .topbar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 18px 7%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 10; }
+    .brand { font-size: 21px; font-weight: 800; color: var(--text); }
+    .brand span, .hero h1 span { color: var(--orange); }
+    .topbar a { font-size: 14px; font-weight: 600; }
+    .hero { padding: 75px 20px 65px; text-align: center; background: linear-gradient(135deg, #FFF1DE, #FFF9F1); border-bottom: 1px solid var(--border); }
+    .hero-label { display: inline-block; background: #FFE5CB; color: #B84D08; padding: 6px 16px; border-radius: 30px; font-size: 12px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px; }
+    .hero h1 { font-size: clamp(34px, 5vw, 50px); line-height: 1.2; margin-bottom: 15px; }
+    .hero p { color: var(--muted); max-width: 700px; margin: auto; }
+    .updated { margin-top: 20px; font-size: 13px; color: var(--muted); }
+    .container { max-width: 1100px; margin: 45px auto; padding: 0 22px; display: grid; grid-template-columns: 245px 1fr; gap: 28px; align-items: start; }
+    .sidebar { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 22px; position: sticky; top: 90px; }
+    .sidebar h3 { font-size: 14px; margin-bottom: 15px; }
+    .sidebar a { display: block; font-size: 13px; color: var(--muted); padding: 6px 0; }
+    .content { min-width: 0; }
+    .notice { background: #FFF0DE; border-left: 4px solid var(--orange); padding: 18px 20px; border-radius: 8px; margin-bottom: 25px; font-size: 14px; }
+    .policy-section { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 27px; margin-bottom: 18px; scroll-margin-top: 95px; }
+    .policy-section h2 { font-size: 20px; margin-bottom: 14px; }
+    .policy-section h3 { font-size: 16px; margin: 20px 0 8px; }
+    .policy-section p { color: #5D574F; font-size: 14px; margin-bottom: 12px; }
+    .policy-section ul { padding-left: 22px; color: #5D574F; font-size: 14px; margin: 10px 0 15px; }
+    .policy-section li { margin-bottom: 8px; }
+    .contact-card { background: #FFF0DE; border: 1px solid #FFDFC0; border-radius: 14px; padding: 25px; }
+    .contact-card h2 { margin-bottom: 12px; }
+    footer { text-align: center; padding: 30px 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; background: white; }
     @media (max-width: 760px) {
-      .container {
-        grid-template-columns: 1fr;
-        margin: 25px auto;
-      }
-
-      .sidebar {
-        position: static;
-      }
-
-      .sidebar nav {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0 12px;
-      }
-
-      .policy-section {
-        padding: 21px;
-      }
-
-      .topbar {
-        padding: 15px 20px;
-      }
+      .container { grid-template-columns: 1fr; margin: 25px auto; }
+      .sidebar { position: static; }
+      .sidebar nav { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+      .policy-section { padding: 21px; }
+      .topbar { padding: 15px 20px; }
     }
   </style>
 </head>
-
 <body>
-
 <header class="topbar">
   <a class="brand" href="#">Arrow <span>Puzzle</span> World</a>
   <a href="#contact">Contact Us</a>
@@ -255,559 +59,229 @@
 
 <section class="hero">
   <div class="hero-label">Your Privacy Matters</div>
-
   <h1>Privacy <span>Policy</span></h1>
-
-  <p>
-    Your privacy is important to us. This policy explains how
-    Arrow Puzzle World handles information when you use our
-    mobile game and related services.
-  </p>
-
-  <div class="updated">
-    Effective Date: November 15, 2026
-    <br>
-    Last Updated: November 15, 2026
-  </div>
+  <p>This Privacy Policy explains how Arrow Puzzle World collects, uses, stores and shares information when you play the game or use related features.</p>
+  <div class="updated">Effective Date: November 16, 2026<br>Last Updated: November 16, 2026</div>
 </section>
 
 <div class="container">
-
   <aside class="sidebar">
     <h3>Privacy Policy</h3>
     <nav>
       <a href="#introduction">1. Introduction</a>
-      <a href="#information">2. Information Collected</a>
-      <a href="#usage">3. How We Use Data</a>
-      <a href="#advertising">4. Advertising</a>
-      <a href="#firebase">5. Firebase Services</a>
-      <a href="#purchases">6. Purchases</a>
-      <a href="#sharing">7. Data Sharing</a>
-      <a href="#security">8. Data Security</a>
-      <a href="#retention">9. Data Retention</a>
-      <a href="#rights">10. Your Rights</a>
-      <a href="#children">11. Children's Privacy</a>
-      <a href="#thirdparty">12. Third Parties</a>
-      <a href="#changes">13. Policy Changes</a>
-      <a href="#contact">14. Contact Us</a>
+      <a href="#information">2. Information We Collect</a>
+      <a href="#telemetry">3. Gameplay Analytics</a>
+      <a href="#usage">4. How We Use Information</a>
+      <a href="#advertising">5. Advertising</a>
+      <a href="#firebase">6. Firebase & Local Storage</a>
+      <a href="#notifications">7. Notifications</a>
+      <a href="#purchases">8. Purchases</a>
+      <a href="#sharing">9. Data Sharing</a>
+      <a href="#security">10. Security</a>
+      <a href="#retention">11. Retention & Deletion</a>
+      <a href="#rights">12. Your Rights</a>
+      <a href="#children">13. Children's Privacy</a>
+      <a href="#thirdparty">14. Third Parties</a>
+      <a href="#changes">15. Policy Changes</a>
+      <a href="#contact">16. Contact Us</a>
     </nav>
   </aside>
 
   <main class="content">
-
     <div class="notice">
-      <strong>Important:</strong>
-      Please read this Privacy Policy carefully before using
-      Arrow Puzzle World. By using the game, you acknowledge
-      that you have read this policy.
+      <strong>Important:</strong> Please read this Privacy Policy before using Arrow Puzzle World. This policy describes the information practices for the version and features of the game in which the relevant services are enabled. Some information is processed by third-party providers such as Google.
     </div>
 
     <section class="policy-section" id="introduction">
       <h2>1. Introduction</h2>
-
-      <p>
-        Welcome to Arrow Puzzle World, a mobile puzzle game
-        available on Google Play.
-      </p>
-
-      <p>
-        This Privacy Policy explains how Arrow Puzzle World
-        ("we", "our", or "us") collects, uses, stores, and
-        shares information when you use our application.
-      </p>
-
-      <p>
-        App Name: Arrow Puzzle World
-        <br>
-        Package Name: com.arrowpuzzleworld.game
-        <br>
-        Platform: Android
-        <br>
-        Developer: [INSERT LEGAL DEVELOPER OR PUBLISHER NAME]
-      </p>
-
-      <p>
-        We aim to handle information responsibly and in
-        accordance with applicable privacy laws and Google
-        Play Developer Program Policies.
-      </p>
+      <p>Welcome to Arrow Puzzle World, an Android puzzle game.</p>
+      <p>This Privacy Policy explains how Arrow Puzzle World ("we", "our" or "us") collects, uses, stores and shares information when you use the application and its online features.</p>
+      <p><strong>App Name:</strong> Arrow Puzzle World<br>
+      <strong>Package Name:</strong> com.arrowpuzzleworld.game<br>
+      <strong>Platform:</strong> Android<br>
+      <strong>Developer / Publisher:</strong> GameModeOn</p>
+      <p>We aim to handle information responsibly and in accordance with applicable privacy laws and Google Play requirements.</p>
     </section>
 
     <section class="policy-section" id="information">
       <h2>2. Information We Collect</h2>
-
-      <p>
-        Depending on the features you use and the SDK
-        configurations in the application, the following
-        categories of information may be collected or processed.
-      </p>
-
-      <h3>A. Game and Gameplay Information</h3>
-
+      <p>The information processed depends on the features you use, your device and the SDK and service configurations in the version of the application you install. Categories may include:</p>
+      <h3>A. Account and Player Identifiers</h3>
       <ul>
-        <li>Game progress and completed levels.</li>
-        <li>Scores, achievements and player statistics.</li>
-        <li>Hearts, coins, hints and reward balances.</li>
-        <li>Game preferences and settings.</li>
-        <li>Gameplay synchronization information.</li>
+        <li>A Firebase-generated player identifier associated with your game session or anonymous game account.</li>
+        <li>Player display name or other profile details if you choose to provide them.</li>
+        <li>Authentication and account-status information needed to maintain game services.</li>
       </ul>
-
-      <h3>B. Device and Technical Information</h3>
-
+      <h3>B. Gameplay and Progress Information</h3>
       <ul>
-        <li>Device model and manufacturer.</li>
-        <li>Android operating system and app version.</li>
-        <li>Device identifiers, including advertising identifiers where applicable.</li>
-        <li>IP address and general network information where processed by our service providers.</li>
-        <li>Crash reports, diagnostics and performance information.</li>
+        <li>Levels started, completed or failed; scores, moves and completion times.</li>
+        <li>Achievements, quests, streaks, tournament or duel participation and results.</li>
+        <li>In-game balances and activity, such as coins, hearts, hints, XP and reward claims.</li>
+        <li>Game mode, settings, preferences and progress synchronization information.</li>
       </ul>
+      <h3>C. Device, App and Diagnostic Information</h3>
+      <ul>
+        <li>Device model or manufacturer, Android version, app version and relevant technical configuration.</li>
+        <li>Crash reports, error details, performance diagnostics and app lifecycle information.</li>
+        <li>IP address and general network information that may be processed by Google or other service providers when their services communicate with your device.</li>
+        <li>Advertising identifiers or other device identifiers where permitted and used by the advertising SDK and your device settings.</li>
+      </ul>
+      <h3>D. Session and Presence Information</h3>
+      <ul>
+        <li>Session start and end information, session duration and app foreground/background state.</li>
+        <li>Online presence or last-active information used to understand whether a player connection is active.</li>
+        <li>Current gameplay context, such as a game mode or level, where the relevant telemetry feature is enabled.</li>
+      </ul>
+      <p>Presence and session information is used for game operations and analytics. It should not be treated as a guaranteed real-time indication of a person's availability.</p>
+      <h3>E. Advertising and Ad Interaction Information</h3>
+      <ul>
+        <li>Rewarded-ad requests, impressions, completions, failures and reward-placement events.</li>
+        <li>Ad interaction, delivery and diagnostic information processed by Google AdMob and its partners.</li>
+      </ul>
+      <h3>F. Notification Information</h3>
+      <ul>
+        <li>A Firebase Cloud Messaging (FCM) registration token or related technical token information used to route notifications to an app installation.</li>
+        <li>Notification preferences and events, such as whether a notification was opened, where those features are enabled.</li>
+      </ul>
+      <h3>G. Information You Send Us</h3>
+      <p>If you contact support, we receive the email address and the information you include in your message.</p>
+    </section>
 
-      <h3>C. Advertising Information</h3>
-
-      <p>
-        Our advertising partners may process advertising
-        identifiers, ad interaction information, approximate
-        location derived from IP address, and device or app
-        information to provide, measure and improve advertising,
-        subject to applicable consent and privacy settings.
-      </p>
-
-      <h3>D. Information You Provide</h3>
-
-      <p>
-        If you contact us for support, we may receive your
-        email address and any information you voluntarily
-        include in your message.
-      </p>
+    <section class="policy-section" id="telemetry">
+      <h2>3. Gameplay Analytics, Events and Monitoring</h2>
+      <p>Arrow Puzzle World may send gameplay and technical events to our backend so we can operate, protect and improve the game. Events may include level starts and outcomes, gameplay actions, reward claims, session lifecycle events, app errors and feature usage.</p>
+      <p>We may use aggregated or event-level information to understand activity such as daily or monthly active players, new players, session counts, level completion rates, retention, feature usage and technical reliability.</p>
+      <p>We may also process events relating to rewarded advertisements, including impressions, completions and failures. Information reported by the app about an ad or reward is not necessarily independently verified advertising revenue. We do not represent client-reported revenue estimates as confirmed revenue.</p>
+      <p>We use validation, access controls and technical safeguards intended to reduce invalid, duplicate or abusive event submissions. These measures cannot guarantee that every event is perfectly accurate.</p>
     </section>
 
     <section class="policy-section" id="usage">
-      <h2>3. How We Use Information</h2>
-
-      <p>Information may be used for the following purposes:</p>
-
+      <h2>4. How We Use Information</h2>
+      <p>We may use information for the following purposes:</p>
       <ul>
-        <li>To operate and maintain the game.</li>
-        <li>To save and synchronize game progress.</li>
-        <li>To manage coins, rewards, hints and hearts.</li>
-        <li>To provide rewarded video advertising.</li>
-        <li>To detect crashes, bugs and technical problems.</li>
-        <li>To improve game performance and user experience.</li>
-        <li>To prevent fraud, abuse and unauthorized activity.</li>
-        <li>To process purchases and premium entitlements.</li>
-        <li>To respond to user support requests.</li>
-        <li>To comply with legal obligations.</li>
+        <li>To provide, operate and maintain the game and its features.</li>
+        <li>To save and synchronize gameplay progress across supported sessions or devices.</li>
+        <li>To manage player profiles, scores, leaderboards, achievements, rewards and game balances.</li>
+        <li>To understand gameplay activity, measure feature usage and improve game design and performance.</li>
+        <li>To monitor sessions and connection status and troubleshoot technical issues.</li>
+        <li>To detect crashes, bugs, fraud, cheating, abuse and unauthorized activity.</li>
+        <li>To deliver and measure rewarded advertisements.</li>
+        <li>To send notifications where enabled and permitted by your device settings and applicable law.</li>
+        <li>To respond to support requests and comply with legal obligations.</li>
       </ul>
     </section>
 
     <section class="policy-section" id="advertising">
-      <h2>4. Advertising and Google AdMob</h2>
-
-      <p>
-        Arrow Puzzle World uses Google AdMob to display
-        rewarded video advertisements.
-      </p>
-
-      <p>
-        Players may voluntarily watch rewarded advertisements
-        to receive in-game benefits such as:
-      </p>
-
-      <ul>
-        <li>Additional hearts.</li>
-        <li>Gameplay hints.</li>
-        <li>Continue after losing.</li>
-        <li>Bonus coins and rewards.</li>
-      </ul>
-
-      <p>
-        Google AdMob and its partners may collect or process
-        information such as advertising IDs, device information,
-        IP addresses, advertising interactions and diagnostic
-        information, depending on the SDK configuration and
-        applicable consent choices.
-      </p>
-
-      <p>
-        Advertising information may be used for ad delivery,
-        frequency management, measurement, fraud prevention
-        and advertising personalization where permitted.
-      </p>
-
-      <p>
-        Users may be shown personalized or non-personalized
-        advertisements depending on their location, consent
-        status and applicable advertising settings.
-      </p>
-
-      <p>
-        For additional information, visit:
-        <br>
-        <a href="https://policies.google.com/privacy"
-           target="_blank" rel="noopener noreferrer">
-          Google Privacy Policy
-        </a>
-      </p>
-
-      <p>
-        You can review Google's advertising and privacy
-        controls through your Android device settings and
-        available consent options.
-      </p>
+      <h2>5. Advertising and Google AdMob</h2>
+      <p>Arrow Puzzle World uses Google AdMob to provide rewarded video advertisements. You may choose to watch an available rewarded ad to receive an in-game benefit, such as an extra heart, a hint, an opportunity to continue after losing or bonus coins.</p>
+      <p>Google AdMob and its advertising partners may process information such as advertising IDs, device and app information, IP address, ad requests, ad interactions and diagnostic information. The information processed depends on the SDK configuration, your consent choices, device settings and applicable law.</p>
+      <p>Ads may be personalized or non-personalized depending on your location, consent status and available privacy settings. Where applicable, the app may use Google's User Messaging Platform (UMP) to present consent and privacy choices.</p>
+      <p>You can review or change certain advertising and privacy controls through the consent options presented in the app and your Android device settings, where available.</p>
+      <p>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a><br>
+      Google AdMob information: <a href="https://support.google.com/admob/" target="_blank" rel="noopener noreferrer">AdMob Help</a></p>
     </section>
 
     <section class="policy-section" id="firebase">
-      <h2>5. Firebase and Local Storage</h2>
+      <h2>6. Firebase Services and Local Storage</h2>
+      <h3>A. Firebase Authentication</h3>
+      <p>The game may use Firebase Authentication, including anonymous authentication, to create or maintain a player identifier and associate game data with a player. Anonymous authentication does not necessarily require you to provide your name or email address.</p>
+      <h3>B. Firebase Realtime Database</h3>
+      <p>We use Firebase Realtime Database to support online game features and synchronize relevant information. Depending on the features used, this may include player profile and progress information, leaderboards, gameplay sessions, presence, telemetry events, notification tokens and related records.</p>
+      <h3>C. Firebase Cloud Functions and Backend Processing</h3>
+      <p>Our backend may process game actions, validate submissions, manage rewards, receive telemetry, handle notification-related events and provide authorized administrative analytics. Backend access is restricted through authentication and authorization controls intended to prevent ordinary players from accessing administrative data.</p>
+      <h3>D. Firebase Cloud Messaging</h3>
+      <p>Where notifications are enabled, Firebase Cloud Messaging is used to deliver push notifications. The app may register an FCM token and store notification preferences or notification interaction events to support this feature.</p>
+      <h3>E. Local Storage - Android Room</h3>
+      <p>The app uses a local Room database to store supported game information on your device, which may include progress, preferences, session or event data awaiting synchronization. Local data may remain until it is cleared through app or Android settings, or the app is uninstalled, subject to Android backup and storage settings.</p>
+      <p>Firebase services are provided by Google. More information: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security</a>.</p>
+    </section>
 
-      <h3>A. Firebase Realtime Database</h3>
-
-      <p>
-        We use Firebase Realtime Database to support online
-        game functionality and synchronize relevant gameplay
-        information across supported sessions or devices.
-      </p>
-
-      <p>
-        Depending on the features enabled, synchronized
-        information may include game progress, scores,
-        rewards, coins and gameplay-related settings.
-      </p>
-
-      <h3>B. Firebase Services</h3>
-
-      <p>
-        Other Firebase services may process technical,
-        diagnostic or application information if enabled
-        in the application. The exact information depends
-        on the Firebase SDKs and features integrated into
-        the released version.
-      </p>
-
-      <p>
-        Firebase services are provided by Google.
-        More information:
-        <br>
-        <a href="https://firebase.google.com/support/privacy"
-           target="_blank" rel="noopener noreferrer">
-          Firebase Privacy and Security
-        </a>
-      </p>
-
-      <h3>C. Local Database - Android Room</h3>
-
-      <p>
-        The application uses Android Room Database to store
-        supported game information locally on your device.
-        This can include game progress, preferences and
-        other gameplay information.
-      </p>
-
-      <p>
-        Local information may remain on your device until
-        it is cleared through the application, Android
-        settings or app uninstallation, subject to the
-        application's backup and storage configuration.
-      </p>
+    <section class="policy-section" id="notifications">
+      <h2>7. Push Notifications</h2>
+      <p>If notification functionality is enabled, Arrow Puzzle World may send gameplay reminders, daily puzzle messages, updates or other game-related notifications.</p>
+      <p>You can control notification permission through Android settings and, where available, in-game notification preferences. Disabling notifications may prevent the app from sending some or all push notifications.</p>
+      <p>To route a notification, Firebase Cloud Messaging may process an app-instance registration token and technical delivery information. We may record notification interaction events, such as an opened notification, to measure whether notifications are useful and to improve the feature.</p>
     </section>
 
     <section class="policy-section" id="purchases">
-      <h2>6. In-App Purchases and Payments</h2>
-
-      <p>
-        Arrow Puzzle World may introduce optional premium
-        purchases through Google Play Billing.
-      </p>
-
-      <p>Potential purchases may include:</p>
-
-      <ul>
-        <li>Remove advertisements.</li>
-        <li>Starter and premium coin packs.</li>
-        <li>Additional hearts and game benefits.</li>
-        <li>Premium memberships or subscriptions.</li>
-        <li>Exclusive puzzle packs and themes.</li>
-      </ul>
-
-      <p>
-        If these features are introduced, payment processing
-        will be handled through Google Play's billing
-        infrastructure.
-      </p>
-
-      <p>
-        We do not directly collect or store your complete
-        payment card details through the game. Google Play
-        handles payment processing according to its own
-        terms and privacy policy.
-      </p>
-
-      <p>
-        Learn more:
-        <br>
-        <a href="https://payments.google.com/"
-           target="_blank" rel="noopener noreferrer">
-          Google Payments
-        </a>
-      </p>
+      <h2>8. In-App Purchases and Payments</h2>
+      <p>If in-app purchases are made available in the version of the game you use, payment processing is handled through the applicable Google Play billing services.</p>
+      <p>We do not ask you to send complete payment card details to us through the game. Google Play handles payment information under its own terms and privacy policy. We may receive purchase status, product or entitlement information needed to provide a purchased feature.</p>
+      <p>Google Payments information: <a href="https://payments.google.com/" target="_blank" rel="noopener noreferrer">Google Payments</a>.</p>
     </section>
 
     <section class="policy-section" id="sharing">
-      <h2>7. How We Share Information</h2>
-
-      <p>
-        We do not sell personal information to third parties.
-        We may share or permit processing of relevant
-        information in the following circumstances:
-      </p>
-
+      <h2>9. How We Share Information</h2>
+      <p>We do not sell personal information. We may disclose or allow processing of relevant information in the following circumstances:</p>
       <ul>
-        <li>
-          <strong>Google AdMob:</strong>
-          To provide and measure advertisements and support
-          advertising-related services.
-        </li>
-
-        <li>
-          <strong>Google Firebase:</strong>
-          To provide database, synchronization and other
-          enabled backend services.
-        </li>
-
-        <li>
-          <strong>Google Play:</strong>
-          To manage app distribution, purchases and billing.
-        </li>
-
-        <li>
-          <strong>Service providers:</strong>
-          To support app operations, security, diagnostics
-          and technical maintenance.
-        </li>
-
-        <li>
-          <strong>Legal requirements:</strong>
-          When disclosure is required by applicable law or
-          a valid legal process.
-        </li>
+        <li><strong>Google Firebase:</strong> to provide authentication, database, backend, messaging and related enabled services.</li>
+        <li><strong>Google AdMob:</strong> to deliver, measure and support advertising and rewarded-ad features.</li>
+        <li><strong>Google Play:</strong> to distribute the app and support billing or app-related services.</li>
+        <li><strong>Service providers:</strong> to support hosting, security, diagnostics, maintenance and operation of the game.</li>
+        <li><strong>Legal and safety reasons:</strong> where disclosure is required by law, legal process or is reasonably necessary to protect users, our rights or the security of the service.</li>
       </ul>
-
-      <p>
-        Information shared with service providers is subject
-        to their applicable privacy and security practices.
-      </p>
+      <p>We do not authorize service providers to use information they process on our behalf for purposes unrelated to providing their services, subject to their own applicable terms and privacy practices.</p>
     </section>
 
     <section class="policy-section" id="security">
-      <h2>8. Data Security</h2>
-
-      <p>
-        We take reasonable technical and organizational
-        measures to protect information against unauthorized
-        access, alteration, disclosure or destruction.
-      </p>
-
-      <p>Security measures may include:</p>
-
-      <ul>
-        <li>Encrypted network communication using HTTPS/TLS where supported.</li>
-        <li>Appropriate database access controls.</li>
-        <li>Secure handling of application data.</li>
-        <li>Regular technical maintenance and security reviews.</li>
-      </ul>
-
-      <p>
-        However, no electronic storage system or internet
-        transmission can be guaranteed to be completely secure.
-      </p>
+      <h2>10. Data Security</h2>
+      <p>We use reasonable technical and organizational measures intended to protect information against unauthorized access, alteration, disclosure or destruction. Measures may include encrypted network communication where supported, database security rules, authentication and authorization checks, server-side validation and access restrictions.</p>
+      <p>No method of transmission or electronic storage is completely secure. We cannot guarantee absolute security.</p>
     </section>
 
     <section class="policy-section" id="retention">
-      <h2>9. Data Retention and Deletion</h2>
-
-      <p>
-        We retain information only for as long as reasonably
-        necessary to provide the game, maintain its services,
-        meet legal requirements and resolve disputes.
-      </p>
-
+      <h2>11. Data Retention and Deletion</h2>
+      <p>We retain information for as long as reasonably necessary for the purposes described in this policy, including providing the game, maintaining player progress, operating security and analytics features, resolving disputes and meeting legal obligations. Retention periods may differ by data type and service provider.</p>
       <h3>Local Data</h3>
-
-      <p>
-        Locally stored gameplay information can generally be
-        removed by clearing the application's data or
-        uninstalling the application, subject to Android
-        backup settings.
-      </p>
-
-      <h3>Online Data</h3>
-
-      <p>
-        If online gameplay information is associated with
-        a player identifier or account, users may request
-        deletion by contacting us at the email address below.
-      </p>
-
-      <p>
-        We will review and process valid deletion requests
-        within a reasonable period, subject to applicable
-        legal retention requirements.
-      </p>
-
-      <p>
-        Information held independently by Google or other
-        service providers may also be subject to their
-        respective retention and deletion policies.
-      </p>
+      <p>Locally stored game information can generally be removed by clearing the app's data or uninstalling the app. This does not necessarily delete information already synchronized to our online services.</p>
+      <h3>Online Data and Deletion Requests</h3>
+      <p>If you want us to review a request to delete information associated with your player identifier, contact us at <a href="mailto:official.gamemodeon@gmail.com">official.gamemodeon@gmail.com</a>. Include your player ID if you can access it, but do not send your password or other authentication secrets.</p>
+      <p>We may need to verify and clarify a request before processing it. We will review valid requests and handle them within a reasonable period, subject to applicable law, legitimate operational needs and information we are legally required or permitted to retain. Deleting local app data or uninstalling the game does not by itself guarantee deletion of server-side records.</p>
+      <p>Information processed independently by Google or another provider may also be subject to that provider's retention and deletion practices.</p>
     </section>
 
     <section class="policy-section" id="rights">
-      <h2>10. Your Privacy Rights and Choices</h2>
-
-      <p>
-        Depending on your location and applicable law,
-        you may have the right to:
-      </p>
-
-      <ul>
-        <li>Request access to personal information.</li>
-        <li>Request correction of inaccurate information.</li>
-        <li>Request deletion of eligible information.</li>
-        <li>Withdraw consent where processing is based on consent.</li>
-        <li>Manage advertising and privacy preferences.</li>
-        <li>Contact us with privacy-related concerns.</li>
-      </ul>
-
-      <p>
-        You can contact us using the details provided
-        in the Contact Us section.
-      </p>
+      <h2>12. Your Privacy Rights and Choices</h2>
+      <p>Depending on your location and applicable law, you may have rights to request access to, correction of or deletion of certain personal information, object to or restrict certain processing, or withdraw consent where processing is based on consent.</p>
+      <p>You may also be able to manage notification permissions through Android settings and advertising or consent choices through the options made available in the app or on your device.</p>
+      <p>To make a privacy request, contact us using the details in the Contact Us section. We may request information reasonably necessary to verify and process your request.</p>
     </section>
 
     <section class="policy-section" id="children">
-      <h2>11. Children's Privacy</h2>
-
-      <p>
-        Arrow Puzzle World is not intended to knowingly
-        collect personal information from children in
-        violation of applicable privacy laws.
-      </p>
-
-      <p>
-        We do not knowingly request personal information
-        from children without the required parental or
-        guardian involvement where applicable.
-      </p>
-
-      <p>
-        If you are a parent or guardian and believe that
-        a child has provided personal information in a
-        manner that violates applicable requirements,
-        please contact us so that we can review the matter.
-      </p>
-
-      <p>
-        Our advertising SDK configuration, age settings
-        and target audience declarations will follow the
-        applicable Google Play Families and advertising
-        requirements if the game is made available to children.
-      </p>
+      <h2>13. Children's Privacy</h2>
+      <p>Arrow Puzzle World is not intended to knowingly collect personal information from children in a way that violates applicable law. We do not knowingly ask children to provide personal information directly.</p>
+      <p>If you are a parent or guardian and believe that a child has provided personal information inappropriately, contact us so we can review the concern and take appropriate steps.</p>
+      <p>Our age declarations, audience settings, consent flow and advertising configuration should be reviewed and kept consistent with the actual target audience and applicable Google Play Families and advertising requirements. If the app is directed to children or mixed audiences that include children, additional requirements may apply.</p>
     </section>
 
     <section class="policy-section" id="thirdparty">
-      <h2>12. Third-Party Services and Links</h2>
-
-      <p>
-        Our application may integrate third-party services
-        to provide advertising, online data storage,
-        app distribution, billing and technical support.
-      </p>
-
-      <p>
-        These third-party providers may process information
-        according to their own privacy policies. We encourage
-        users to review those policies.
-      </p>
-
+      <h2>14. Third-Party Services and Links</h2>
+      <p>The app relies on third-party services for features such as advertising, authentication, online storage, messaging, app distribution and billing. These providers may process information under their own privacy policies. We encourage you to review them:</p>
       <ul>
-        <li>
-          <a href="https://policies.google.com/privacy"
-             target="_blank" rel="noopener noreferrer">
-            Google Privacy Policy
-          </a>
-        </li>
-
-        <li>
-          <a href="https://firebase.google.com/support/privacy"
-             target="_blank" rel="noopener noreferrer">
-            Firebase Privacy Information
-          </a>
-        </li>
-
-        <li>
-          <a href="https://support.google.com/admob/"
-             target="_blank" rel="noopener noreferrer">
-            Google AdMob Help
-          </a>
-        </li>
-
-        <li>
-          <a href="https://policies.google.com/terms"
-             target="_blank" rel="noopener noreferrer">
-            Google Terms of Service
-          </a>
-        </li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Information</a></li>
+        <li><a href="https://support.google.com/admob/" target="_blank" rel="noopener noreferrer">Google AdMob Help</a></li>
+        <li><a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Google Terms of Service</a></li>
       </ul>
     </section>
 
     <section class="policy-section" id="changes">
-      <h2>13. Changes to This Privacy Policy</h2>
-
-      <p>
-        We may update this Privacy Policy from time to time
-        to reflect changes in the application, integrated
-        services, legal requirements or our data practices.
-      </p>
-
-      <p>
-        When we make changes, we will update the
-        "Last Updated" date on this webpage.
-      </p>
-
-      <p>
-        We encourage users to review this page periodically.
-      </p>
+      <h2>15. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy to reflect changes to the game, its features, service providers, data practices or applicable legal requirements.</p>
+      <p>When we make changes, we will update the "Last Updated" date on this page. We encourage you to review this policy periodically.</p>
     </section>
 
     <section class="policy-section" id="contact">
       <div class="contact-card">
-        <h2>14. Contact Us</h2>
-
-        <p>
-          If you have questions, concerns or requests
-          regarding this Privacy Policy or your personal
-          information, please contact us.
-        </p>
-
-        <p>
-          <strong>Application:</strong> Arrow Puzzle World
-          <br>
-          <strong>Package:</strong> com.arrowpuzzleworld.game
-          <br>
-          <strong>Developer:</strong> GameModeOn
-          <br>
-          <strong>Email:</strong>
-          <a href="mailto:YOUR_SUPPORT_EMAIL">
-            official.gamemodeon@gmail.com
-          </a>
-        </p>
-
-        <p>
-          We will review privacy-related inquiries and
-          respond within a reasonable period.
-        </p>
+        <h2>16. Contact Us</h2>
+        <p>If you have questions, concerns or requests about this Privacy Policy or the way information is handled, contact us:</p>
+        <p><strong>Application:</strong> Arrow Puzzle World<br>
+        <strong>Package:</strong> com.arrowpuzzleworld.game<br>
+        <strong>Developer / Publisher:</strong> GameModeOn<br>
+        <strong>Email:</strong> <a href="mailto:official.gamemodeon@gmail.com">official.gamemodeon@gmail.com</a></p>
+        <p>We will review privacy-related inquiries and respond within a reasonable period.</p>
       </div>
     </section>
-
   </main>
 </div>
 
@@ -815,6 +289,5 @@
   <p>© 2026 Arrow Puzzle World. All rights reserved.</p>
   <p>Privacy matters. Play with confidence.</p>
 </footer>
-
 </body>
 </html>
